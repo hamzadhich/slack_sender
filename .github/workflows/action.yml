@@ -28,7 +28,7 @@ jobs:
     
       - name: execute py script # run main.py
         env:
-          GCP_PROJECT_ID: ${{ secrets.SLACK_ID }}
+          SLACK_ID: ${{ secrets.SLACK_ID }}
         run: python sender.py
 
      
